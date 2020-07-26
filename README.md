@@ -5,3 +5,15 @@ NFS provisioner for dynamic storage provisioning.
 ```
 oc new-project nfs-provisioner
 ```
+## Deploy 
+```
+oc create -f https://raw.githubusercontent.com/aroute/nfs-provisioner/master/nfs-provisioner.yaml
+```
+## Add policy
+```
+oc adm policy add-scc-to-user hostmount-anyuid system:serviceaccount:nfs-provisioner:nfs-client-provisioner
+```
+## Deploy Storageclass
+```
+
+```

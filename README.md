@@ -17,3 +17,7 @@ oc adm policy add-scc-to-user hostmount-anyuid system:serviceaccount:nfs-provisi
 ```
 oc create -f https://raw.githubusercontent.com/aroute/nfs-provisioner/master/storageclass.yaml
 ```
+## Deploy Provisioner
+```
+
+```

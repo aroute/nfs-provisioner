@@ -23,7 +23,7 @@ oc create -f https://raw.githubusercontent.com/aroute/nfs-provisioner/master/dep
 ```
 ## Create a Claim (test)
 ```
-
+oc create -f https://raw.githubusercontent.com/aroute/nfs-provisioner/master/test-claim.yaml
 ```
 ## Create a Pod (test)
 ```

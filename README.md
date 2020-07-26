@@ -1,6 +1,9 @@
 # NFS Server with Provisioner
 NFS server and provisioner for dynamic storage provisioning.
 
+## What you will need.
+NFS has been tested on CentOS 7 and 8. Provisioner has been tested on OpenShift 3.x and 4.x. You will need to provide the IP address of your NFS host and the network address. Your storageclass name will be: `managed-nfs-storage`
+
 ## Deploy NFS
 Uses `/var/nfsshare` as a primary NFS shared location. Uses `/var/nfsshare/registry` for the registry. Replace your network address and adjust accordingly.
 ```
@@ -36,7 +39,7 @@ oc adm policy add-scc-to-user hostmount-anyuid system:serviceaccount:nfs-provisi
 oc create -f https://raw.githubusercontent.com/aroute/nfs-provisioner/master/storageclass.yaml
 ```
 ## Deploy Provisioner
-Insert the IP address of your NFS server before applying.
+Insert and replace the IP address <x.x.x.x> of your NFS server, before applying.
 ```
 oc create -f https://raw.githubusercontent.com/aroute/nfs-provisioner/master/deploy-provisioner.yaml
 ```

@@ -5,7 +5,7 @@ NFS provisioner for dynamic storage provisioning.
 ```
 oc new-project nfs-provisioner
 ```
-## Deploy 
+## Service Account and Security
 ```
 oc create -f https://raw.githubusercontent.com/aroute/nfs-provisioner/master/nfs-provisioner.yaml
 ```

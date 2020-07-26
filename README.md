@@ -19,5 +19,13 @@ oc create -f https://raw.githubusercontent.com/aroute/nfs-provisioner/master/sto
 ```
 ## Deploy Provisioner
 ```
+oc create -f https://raw.githubusercontent.com/aroute/nfs-provisioner/master/deploy-provisioner.yaml
+```
+## Create a Claim (test)
+```
+
+```
+## Create a Pod (test)
+```
 
 ```

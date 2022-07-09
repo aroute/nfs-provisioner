@@ -41,7 +41,7 @@ oc create -f https://raw.githubusercontent.com/aroute/nfs-provisioner/master/sto
 ## Deploy Provisioner
 Insert and replace the IP address <x.x.x.x> of your NFS server, before applying.
 ```
-oc create -f https://raw.githubusercontent.com/aroute/nfs-provisioner/master/deploy-provisioner.yaml
+oc create -f deploy-provisioner.yaml
 ```
 ## Create a Claim (test)
 ```
